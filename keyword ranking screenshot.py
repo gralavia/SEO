@@ -52,7 +52,7 @@ for keyword, url in keyword_url_mapping.items():
 
     if rank is not None:
         img = ImageGrab.grab()
-        save_file_path = f'{screenshot_dir}/{datetime.datetime.now().strftime("%m%d")}_{keyword}_{rank}(E).png'
+        save_file_path = f'{screenshot_dir}/{datetime.datetime.now().strftime("%m%d")}_{keyword}_{rank}.png'
         print(f"Saving to {save_file_path}")
         img.save(save_file_path, quality=70)
     else:
